@@ -20,5 +20,18 @@ function draw () {
   box2.x=mouseX;
   box2.y=mouseY;
 
+ if (touch(box1,box2)) {
+    
+    box1.x=random(100,500);
+    box1.y=random(100,500);
+
+ }
+else{
+
+  box1.x = box1.x;
+  box1.y = box1.y;
+
+}
+
   drawSprites();
 }
